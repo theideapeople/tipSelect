@@ -71,42 +71,4 @@
 			//$('input[type=hidden]').trigger('change');
 		});
 	};
-
-	/*
-	 * Do not delete. Future custom scroll bar.
-	 */
-	// var optionsList = $('[id$="_new"] > [id$="_options"]');
-
-	// optionsList.bind('mousewheel', function(e) {
-	// 	var theTop = $(this).children('li').first(),
-	// 		theBottom = $(this).children('li').last(),
-	// 		topPosition = parseInt(theTop.css('margin-top')),
-	// 		bottomPosition = theBottom.position().top - $(this).height();
-
-	// 	console.log('Bottom: ' + bottomPosition + ' Top: ' + topPosition + ' Mousewheel: ' + e.originalEvent.wheelDelta);
-
-	// 	// Scroll the thing.
-	// 	if ( e.originalEvent.wheelDelta < 0 && bottomPosition >= -11 ) {
-	// 		theTop.css({
-	// 			'position' : 'relative',
-	// 			'margin-top' : (parseInt( theTop.css('margin-top') ) - 5 )+ 'px'
-	// 		});
-	// 	} else if ( topPosition <= 0 ) {
-	// 		theTop.css({
-	// 			'position' : 'relative',
-	// 			'margin-top' : ( parseInt( theTop.css('margin-top') ) + 5 ) + 'px'
-	// 		});
-	// 	}
-	// });
-
-	//Prevent hover while scrolling the list
-	// optionsList.hover(function() {
-	// 	// Stop the window from scrolling
-	// 	$(window).bind('mousewheel', function() {
-	// 		return false;
-	// 	});
-	// }, function() {
-	// 	// Stop the window from scrolling
-	// 	$(window).unbind('mousewheel');
-	// });
 })(jQuery);
